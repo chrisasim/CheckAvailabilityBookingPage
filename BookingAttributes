@@ -1,0 +1,83 @@
+                <style>
+					.hotelist-field-wrapper { margin-bottom:15px; }
+					.hotelist-field-wrapper label { display:block; margin-bottom:5px; }
+					.hotelist-field-wrapper .hotelist-input { height: 30px; width:100%; padding:px 9px; border-radius: 3px; border: 1px solid #c0c0c0; background: #ffffff; }
+					.hotelist-field-wrapper .hotelist-button { border:0px; border-radius:3px; padding:5px 10px; background: #59c157; color: #ffffff; }
+					.button {
+					            width: 220px;
+                                height: 35px;
+					}
+				  </style>
+				  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+				  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		
+					<script>
+						var $j = jQuery.noConflict();
+						// $j is now an alias to the jQuery function; creating the new alias is optional.
+						 
+						$j(document).ready(function() {
+						    $j("#hotelist-field-arrival").datepicker({
+							    dateFormat: "dd/mm/yy",
+							    minDate: 0,
+							});
+						});
+				    </script>
+				    <div id="hotelist-booking-form">
+				        <form class="hotelist-form" target="_blank" action="https://wubook.net/wbkd/wbk/?lcode=1484669505" method="post">
+				            <div >
+				                <input id="hotelist-field-arrival" class="button" name="dfrom" placeholder="Ημερομηνία Άφιξης"/>
+				                    <select id="hotelist-field-nights" class="button" name="nights">
+				                        <option value="">Βραδιές</option>
+				                        <option value="1">1 βραδιά</option>
+				                        <option value="2">2 βραδιές</option>
+				                        <option value="3">3 βραδιές</option>
+				                        <option value="4">4 βραδιές</option>
+				                        <option value="5">5 βραδιές</option>
+				                        <option value="6">6 βραδιές</option>
+				                        <option value="7">7 βραδιές</option>
+				                        <option value="8">8 βραδιές</option>
+				                        <option value="9">9 βραδιές</option>
+				                        <option value="10">10 βραδιές</option>
+				                        <option value="11">11 βραδιές</option>
+				                        <option value="12">12 βραδιές</option>
+				                        <option value="13">13 βραδιές</option>
+				                        <option value="14">14 βραδιές</option>
+				                        <option value="15">15 βραδιές</option>
+				                    </select>
+				                    <select id="hotelist-field-adults" class="button" name="adults">
+				                        <option value="">Ενήλικες</option>
+				                        <option value="1">1 ενήλικας</option>
+				                        <option value="2">2 ενήλικες</option>
+				                        <option value="3">3 ενήλικες</option>
+				                        <option value="4">4 ενήλικες</option>
+				                        <option value="5">5 ενήλικες</option>
+				                        <option value="6">6 ενήλικες</option>
+				                        <option value="7">7 ενήλικες</option>
+				                        <option value="8">8 ενήλικες</option>
+				                    </select>
+				                    <select id="hotelist-field-children" class="button" name="children">
+				                        <option value="0">Παιδιά</option>
+				                        <option value="1">1 παιδί</option>
+				                        <option value="2">2 παιδιά</option>
+				                        <option value="3">3 παιδιά</option>
+				                        <option value="4">4 παιδιά</option>
+				                        <option value="5">5 παιδιά</option>
+				                        <option value="6">6 παιδιά</option>
+				                        <option value="7">7 παιδιά</option>
+				                        <option value="8">8 παιδιά</option>
+				                    </select>
+				                    <button id="hotelist-field-submit" style="background-color:#4CAF50;" class="button">
+				                        Έλεγχος Διαθεσιμότητας
+				                    </button>
+				                </div>
+				                <div class="hotelist-field-wrapper">
+	
+				                </div>
+				                <div class="hotelist-field-wrapper">
+				                </div>
+				                <div class="hotelist-field-wrapper">
+
+				                </div>
+		
+				        </form>
+				    </div>
